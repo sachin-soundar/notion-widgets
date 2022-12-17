@@ -1,0 +1,53 @@
+<!-- HTML code to display an image based on the current month -->
+
+<!-- Display a default image -->
+<img id="monthly-image" src="default.jpg" alt="Default image">
+
+<!-- Use JavaScript to determine the current month and update the image source -->
+<script>
+  // Get the current month as a number (0-11)
+  var currentMonth = new Date().getMonth();
+
+  // Get the element that displays the monthly image
+  var imageElement = document.getElementById("monthly-image");
+
+  // Set the source of the image based on the current month
+  switch (currentMonth) {
+    case 0:
+      imageElement.src = "quotes/january.png";
+      break;
+    case 1:
+      imageElement.src = "quotes/february.png";
+      break;
+    case 2:
+      imageElement.src = "quotes/march.png";
+      break;
+    case 3:
+      imageElement.src = "quotes/april.png";
+      break;
+    case 4:
+      imageElement.src = "quotes/may.png";
+      break;
+    case 5:
+      imageElement.src = "quotes/june.png";
+      break;
+    case 6:
+      imageElement.src = "quotes/july.png";
+      break;
+    case 7:
+      imageElement.src = "quotes/august.png";
+      break;
+    case 8:
+      imageElement.src = "quotes/september.png";
+      break;
+    case 9:
+      imageElement.src = "quotes/october.png";
+      break;
+    case 10:
+      imageElement.src = "quotes/november.png";
+      break;
+    case 11:
+      imageElement.src = "quotes/december.png";
+      break;
+  }
+</script>
